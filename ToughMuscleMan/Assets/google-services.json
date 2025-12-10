@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "223212420226",
+    "firebase_url": "https://bigwalt--tough-muscle-mam-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "bigwalt--tough-muscle-mam",
+    "storage_bucket": "bigwalt--tough-muscle-mam.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223212420226:android:6f1cacdef12637673f889b",
+        "android_client_info": {
+          "package_name": "com.bigwalt.toughmuscleman"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8SBnluuxrHATzmZOq-VEj8W3FbEe1GmQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
