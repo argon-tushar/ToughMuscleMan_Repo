@@ -1,0 +1,15 @@
+﻿<Solution>
+  <Project Path="MoreMountains.NiceVibrations.Demos.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="MoreMountains.NiceVibrations.Editor.csproj" />
+  <Project Path="MoreMountains.NiceVibrations.Haptics.csproj" />
+  <Project Path="Google.Play.Common.csproj" />
+  <Project Path="Assembly-CSharp-firstpass.csproj" />
+  <Project Path="GoogleMobileAds.Editor.csproj" />
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="MoreMountains.NiceVibrations.csproj" />
+  <Project Path="Google.Play.Core.csproj" />
+  <Project Path="Google.Play.Review.csproj" />
+  <Project Path="Assembly-CSharp-Editor-firstpass.csproj" />
+  <Project Path="FirebaseMessagingActivityGenerator.csproj" />
+</Solution>
