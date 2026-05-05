@@ -220,8 +220,8 @@ public class AdmobManager : MonoBehaviour
     {
         if (IAPManager.manager.hasVideoPurchase) return;
         if (ARGManager.manager.isTiredModeOn()) return;
-        if (isShowing_inter || UnityAdsManager.manager.isShowing_inter) return;
-        if (isShowing_Reward || UnityAdsManager.manager.isShowing_Reward) return;
+        if (isShowing_inter) return;
+        if (isShowing_Reward) return;
         if (_appOpenAd != null && _appOpenAd.CanShowAd())
         {
             isShowing_Appopen = true;

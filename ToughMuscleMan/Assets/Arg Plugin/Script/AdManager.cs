@@ -51,7 +51,6 @@ public class AdManager : MonoBehaviour
         isInitialized = true;
 
         AdmobManager.manager.initSDK();
-        UnityAdsManager.manager.initSDK();
         setBannerBGSettings();
     }
 
@@ -98,11 +97,6 @@ public class AdManager : MonoBehaviour
             banner_provider.RemoveAt(0);
             AdmobManager.manager.banner_ShowAd();
         }
-        else if (banner_provider[0] == Keys._UNITY)
-        {
-            banner_provider.RemoveAt(0);
-            UnityAdsManager.manager.banner_ShowAd();
-        }
     }
 
     public void hideBanner()
@@ -110,7 +104,6 @@ public class AdManager : MonoBehaviour
         if (current_Banner == Keys._NONE) return;
 
         if (current_Banner == Keys._ADMOB) AdmobManager.manager.banner_HideAd();
-        else if (current_Banner == Keys._UNITY) UnityAdsManager.manager.banner_HideAd();
     }
 
     //------------- BANNER BG
@@ -192,11 +185,6 @@ public class AdManager : MonoBehaviour
         {
             inter_provider.RemoveAt(0);
             AdmobManager.manager.inter_LoadAd();
-        }
-        else if (inter_provider[0] == Keys._UNITY)
-        {
-            inter_provider.RemoveAt(0);
-            UnityAdsManager.manager.inter_LoadAd();
         }
     }
 
@@ -326,11 +314,6 @@ public class AdManager : MonoBehaviour
             reward_provider.RemoveAt(0);
             AdmobManager.manager.decide_And_Load_Reward();
         }
-        else if (reward_provider[0] == Keys._UNITY)
-        {
-            reward_provider.RemoveAt(0);
-            UnityAdsManager.manager.reward_LoadAd();
-        }
         else if (reward_provider[0] == Keys._NONE)
         {
             ToastManager.manager.showToastMsg(ARGManager.manager.data.msg_NoReward);
@@ -359,9 +342,7 @@ public class AdManager : MonoBehaviour
         get
         {
             if (AdmobManager.manager.isShowing_inter) return true;
-            if (UnityAdsManager.manager.isShowing_inter) return true;
             if (AdmobManager.manager.isShowing_Reward) return true;
-            if (UnityAdsManager.manager.isShowing_Reward) return true;
             if (AdmobManager.manager.isShowing_Appopen) return true;
             return false;
         }

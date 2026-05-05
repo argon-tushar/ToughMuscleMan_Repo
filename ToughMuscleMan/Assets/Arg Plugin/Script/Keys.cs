@@ -14,7 +14,6 @@ public static class Keys
 
     //------------------------
     public readonly static string _ADMOB = "ADMOB";
-    public readonly static string _UNITY = "UNITY";
     public readonly static string _NONE = "NONE";
     public readonly static string _REWARD = "REWARD";
     public readonly static string _REWARD_INTER = "REWARD INTERSTITIL";

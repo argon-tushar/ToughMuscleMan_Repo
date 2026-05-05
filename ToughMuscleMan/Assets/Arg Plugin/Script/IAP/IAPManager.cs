@@ -386,7 +386,6 @@ public class IAPManager : MonoBehaviour
 
         AdmobManager.manager.banner_DestroyAd();
         AdmobManager.manager.forceDestroy_native();
-        UnityAdsManager.manager.banner_HideAd();
 
         checkForHidesOnPurchase();
     }
